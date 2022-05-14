@@ -19,12 +19,14 @@ body {
     --white-color: #E0BB20;
     --off-white:#e1e1e1;
 }
-.active{
+/* .active{
     font-weight: bold;
-}
+} */
 .navbar{
     width: 100%;
     height: 50px;
+    position: fixed;
+    z-index:9;
     background-color: var(--black-color);
 }
 .navbar_container{
