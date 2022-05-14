@@ -24,7 +24,7 @@ body {
 } */
 .navbar{
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     z-index:9;
     background-color: var(--black-color);
@@ -34,8 +34,8 @@ body {
     align-items: center;
     height: 100%;
     /* background-color: red; */
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
     color:var(--white-color)
 }
 .logo_container{
@@ -48,11 +48,14 @@ body {
 }
 .menu_container{
     flex: 4;
-    flex-shrink: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
     /* background-color:blue; */
 }
 .searchBar{
-    background-color:#fff;
+    background-color:#151515;
     height:30px;
     width:450px;
     max-width:280px;
@@ -70,6 +73,8 @@ body {
     font-size:1rem;
     border: none;
     outline: none;
+    color: #fff;
+    background-color:#151515;
     text-indent: 5px;
 }
 .searchBar i{
@@ -89,13 +94,7 @@ body {
     font-family: 'Sen', sans-serif;
     color:var(--off-white);
 }
-.profile_container{
-    flex: 2;
-    /* background-color:green; */
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-end; */
-}
+
 .user_img_container{
     width: 30px;
     height: 30px;
@@ -107,36 +106,37 @@ body {
     object-fit: cover;
     height: auto;
 }
-.user_name_container{
-    display: flex;
-    color: #fff;
-    align-items: center;
-}
-
-.name{
-    padding-left: 5px;
-}
-.arrow{
-    padding-left: 5px;
-    font-size:1.2rem;
-    padding-top: 3px;
-}
 
 /* ******************************************* */
 .sidebar{
-    width: 50px;
+    width: 80px;
     height: 100%;
     background-color: var(--black-color);
     position:fixed;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.698);
     display: flex;
+    row-gap:30px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top:60px;
+    padding-top:70px;
+    overflow: hidden;
+    z-index: 8;
+}
+.menu_items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+}
+.menu_items:hover{
+    color: var(--white-color);
+    transform: scale(1.1);
 }
 .sidebar i{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-size:1.2rem
 }
 /* *********************************************** */
@@ -144,7 +144,7 @@ body {
 .main_content_container{
     width: 100%;
     padding-top:50px;
-    padding-left: 50px;
+    padding-left: 80px;
     min-height:calc(1000vh - 50px);
     background-color: var(--black-color-light);
 }
@@ -170,17 +170,16 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* background-color:blue; */
+    background-color:blue;
 }
 .movie_card_img img{
     width: 100%;
-    /* height: auto; */
 }
 .movie_card_content{
     width: 100%;
     height: 100%;
-    /* background-color:yellow; */
-    background:linear-gradient(to bottom,rgba(0,0,0,.2),#151515e1);
+    background-color:yellow;
+    background:linear-gradient(to bottom,rgba(0,0,0,.1),#151515e1);
     position: absolute;
     top: 270px;
     transition: all .5s ease-in-out;
@@ -190,14 +189,14 @@ body {
 }
 .movie_card:hover .movie_card_content{
     top: 0;
-    /* background:linear-gradient(to bottom,rgba(0,0,0,.3),#151515); */
 }
 .movie_details{
+    position: relative;
     padding: 10px;
     transform: scale(0);
     transform-origin: 100% 50%;
     transition: all 0.5s ease-in-out;
-    background:linear-gradient(to bottom,rgba(0,0,0,.3),#151515);
+    background:linear-gradient(to bottom,rgba(0,0,0,.2),#151515);
 }
 .movie_card:hover .movie_details{
     transform: scale(1);
@@ -215,4 +214,19 @@ body {
 }
 .movie_date{
     color: lightgray;
+}
+.movie_details a{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+.movie_details i{
+    color: #fff;
 }

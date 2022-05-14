@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px){
     .menu_container {
        padding:0 10px;
     }
@@ -9,7 +9,8 @@
         height: 50px;
     }
     .navbar_container{
-        padding-right: 10px;
+        padding-left: 65px;
+        padding-right: 65px;
     }
     .user_img_container{
         width: 28px;
@@ -49,6 +50,10 @@
         color: var(--white-color);
     }
 
+    .sidebar{
+        width: 65px;
+    }
+
     .main_content_container{
         width: 100%;
         padding-left: 50px;
@@ -62,11 +67,11 @@
     
     .movie_card{
         width: 28%;
-        height: 200px;
+        height: 270px;
     }
     .movie_card_content{
-        padding-top: 120px;
-        padding-left: 8px;
+        padding-top: 170px;
+        padding-left: 0px;
     }
 
     .movie_details{
@@ -90,24 +95,20 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 /* ************************************************ */
+@media (min-width: 641px) and (max-width: 767px){
 
-@media (max-width: 480px) {
 
     html{
         font-size: 10px;
     }
 
+    .navbar_container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+/************* Searchbar */
     .searchBar{
         height:20px;
         width:250px;
@@ -125,14 +126,9 @@
     .searchBar i{
         color: var(--white-color);
     }
-    .profile_container{
-        flex: 5;
-        /* background-color:green; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
+/************* Search bar end */
+  
     .user_img_container{
         width: 20px;
         height: 20px;
@@ -140,6 +136,22 @@
         overflow: hidden;
     }
 
+
+
+
+.sidebar{
+    width: 50px;
+    row-gap:20px;
+}
+.menu_items{
+    row-gap: 7px;
+}
+
+
+
+
+
+/* ************************ */
     .main_content_container{
         width: 100%;
         padding-left: 50px;
@@ -150,11 +162,11 @@
     }
     
     .movie_card{
-        width: 25%;
-        height: 100px;
+        width: 28%;
+        height: 220px;
     }
     .movie_card_content{
-        padding-top: 50px;
+        padding-top: 150px;
         padding-left: 0px;
     }
 
@@ -166,16 +178,227 @@
     .movie_title{
         margin-bottom: 2px;
         letter-spacing: 0px;
-        font-size:.7rem;
+        font-size:1.2rem;
     }
     .movie_rating{
         display: block;
         margin-bottom: 2px;
-        font-size:.6rem; 
+        font-size:.9rem; 
     }
     .movie_date{
-        font-size:.5rem;
+        font-size:.8rem;
         color: lightgray;
+    }
+    .movie_details a {
+        width: 25px;
+        height: 25px;
+       
+    }
+
+}
+
+
+
+
+/* ************************************************ */
+
+@media (min-width: 481px) and (max-width: 640px){
+
+
+    html{
+        font-size: 10px;
+    }
+
+    .navbar_container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+/************* Searchbar */
+    .searchBar{
+        height:20px;
+        width:250px;
+        max-width:110px;
+        padding: 0 10px;
+        column-gap: 8px;
+        border-radius:2px;
+    }
+    .searchBar input{
+        height:20px;
+        width:90%;
+        font-size:1rem;
+        text-indent:2px;
+    }
+    .searchBar i{
+        color: var(--white-color);
+    }
+
+/************* Search bar end */
+  
+    .user_img_container{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .sidebar{
+        width: 50px;
+        row-gap:20px;
+    }
+    .menu_items{
+        row-gap: 7px;
+    }
+
+
+/* ************************ */
+    .main_content_container{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .movies_container{
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .movie_card{
+        width: 30%;
+        height: 180px;
+    }
+    .movie_card_content{
+        padding-top: 120px;
+        padding-left: 0px;
+    }
+
+    .movie_details{
+        padding: 5px;
+        transform: scale(0);
+        transform-origin: 100% 50%;    
+    }
+    .movie_title{
+        margin-bottom: 2px;
+        letter-spacing: 0px;
+        font-size:1rem;
+    }
+    .movie_rating{
+        display: block;
+        margin-bottom: 2px;
+        font-size:.8rem; 
+    }
+    .movie_date{
+        font-size:.7rem;
+        color: lightgray;
+    }
+    .movie_details a {
+        width: 25px;
+        height: 25px;
+       
+    }
+
+}
+
+
+
+
+
+/* ************************************************ */
+
+@media (max-width: 480px) {
+
+    html{
+        font-size: 10px;
+    }
+
+    .navbar_container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+/************* Searchbar */
+    .searchBar{
+        height:20px;
+        width:250px;
+        max-width:110px;
+        padding: 0 10px;
+        column-gap: 8px;
+        border-radius:2px;
+    }
+    .searchBar input{
+        height:20px;
+        width:90%;
+        font-size:1rem;
+        text-indent:2px;
+    }
+    .searchBar i{
+        color: var(--white-color);
+    }
+
+/************* Search bar end */
+  
+    .user_img_container{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+/* ************** sideBar */
+
+
+.sidebar{
+    width: 50px;
+    row-gap:20px;
+}
+.menu_items{
+    row-gap: 7px;
+}
+
+/* ******* sideBar end */
+
+
+
+/* ************************ */
+    .main_content_container{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .movies_container{
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .movie_card{
+        width: 27%;
+        height: 120px;
+    }
+    .movie_card_content{
+        padding-top: 70px;
+        padding-left: 0px;
+    }
+
+    .movie_details{
+        padding: 5px;
+        transform: scale(0);
+        transform-origin: 100% 50%;    
+    }
+    .movie_title{
+        margin-bottom: 2px;
+        letter-spacing: 0px;
+        font-size:1rem;
+    }
+    .movie_rating{
+        display: block;
+        margin-bottom: 2px;
+        font-size:.8rem; 
+    }
+    .movie_date{
+        font-size:.6rem;
+        color: lightgray;
+    }
+    .movie_details a {
+        width: 20px;
+        height: 20px;
+       
     }
 
 }
