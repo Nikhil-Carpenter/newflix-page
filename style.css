@@ -143,6 +143,7 @@ body {
 
 .main_content_container{
     width: 100%;
+    padding-top:50px;
     padding-left: 50px;
     min-height:calc(1000vh - 50px);
     background-color: var(--black-color-light);
