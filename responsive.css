@@ -3,7 +3,10 @@
        padding:0 10px;
     }
     html{
-        font-size:12px;
+        font-size:14px;
+    }
+    .logo {
+        font-size:2.5rem;
     }
     .navbar{
         height: 50px;
@@ -50,8 +53,21 @@
         color: var(--white-color);
     }
 
-    .sidebar{
-        width: 65px;
+    .sidebar {
+        width: 100%;
+        height: 65px;
+        background-color: var(--black-color);
+        position: fixed;
+        color: rgba(255, 255, 255, 0.698);
+        display: flex;
+        bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        z-index: 8;
+        left: 0;
+        padding: 10px 0;
     }
 
     .main_content_container{
@@ -100,25 +116,28 @@
 
 
     html{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .navbar_container{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .logo{
+        font-size:2.5rem;
+    }
 
 /************* Searchbar */
     .searchBar{
         height:20px;
         width:250px;
-        max-width:110px;
+        max-width:200px;
         padding: 0 10px;
         column-gap: 8px;
         border-radius:2px;
     }
     .searchBar input{
-        height:20px;
+        height:30px;
         width:90%;
         font-size:1rem;
         text-indent:2px;
@@ -136,20 +155,22 @@
         overflow: hidden;
     }
 
-
-
-
-.sidebar{
-    width: 50px;
-    row-gap:20px;
+.sidebar {
+    width: 100%;
+    height: 65px;
+    background-color: var(--black-color);
+    position: fixed;
+    color: rgba(255, 255, 255, 0.698);
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    z-index: 8;
+    left: 0;
+    padding: 10px 0;
 }
-.menu_items{
-    row-gap: 7px;
-}
-
-
-
-
 
 /* ************************ */
     .main_content_container{
@@ -206,7 +227,7 @@
 
 
     html{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .navbar_container{
@@ -216,15 +237,15 @@
 
 /************* Searchbar */
     .searchBar{
-        height:20px;
+        height:30px;
         width:250px;
-        max-width:110px;
+        max-width:200px;
         padding: 0 10px;
         column-gap: 8px;
         border-radius:2px;
     }
     .searchBar input{
-        height:20px;
+        height:30px;
         width:90%;
         font-size:1rem;
         text-indent:2px;
@@ -242,13 +263,23 @@
         overflow: hidden;
     }
 
-    .sidebar{
-        width: 50px;
-        row-gap:20px;
+    .sidebar {
+        width: 100%;
+        height: 65px;
+        background-color: var(--black-color);
+        position: fixed;
+        color: rgba(255, 255, 255, 0.698);
+        display: flex;
+        bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        z-index: 8;
+        left: 0;
+        padding: 10px 0;
     }
-    .menu_items{
-        row-gap: 7px;
-    }
+
 
 
 /* ************************ */
@@ -306,11 +337,11 @@
 @media (max-width: 480px) {
 
     html{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .navbar_container{
-        padding-left: 50px;
+        padding-left: 10px;
         padding-right: 50px;
     }
 
@@ -318,15 +349,15 @@
     .searchBar{
         height:20px;
         width:250px;
-        max-width:110px;
+        max-width:150px;
         padding: 0 10px;
         column-gap: 8px;
         border-radius:2px;
     }
     .searchBar input{
-        height:20px;
+        height:30px;
         width:90%;
-        font-size:1rem;
+        font-size:1.1rem;
         text-indent:2px;
     }
     .searchBar i{
@@ -345,12 +376,24 @@
 /* ************** sideBar */
 
 
-.sidebar{
-    width: 50px;
-    row-gap:20px;
+.sidebar {
+    width: 100%;
+    height: 65px;
+    background-color: var(--black-color);
+    position: fixed;
+    color: rgba(255, 255, 255, 0.698);
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    z-index: 8;
+    left: 0;
+    padding: 10px 0;
 }
-.menu_items{
-    row-gap: 7px;
+.sidebar .menu_items:last-child{
+    display: none;
 }
 
 /* ******* sideBar end */
@@ -360,15 +403,16 @@
 /* ************************ */
     .main_content_container{
         width: 100%;
-        padding-left: 50px;
+        padding-left: 10px;
     }
     .movies_container{
         padding: 10px;
-        gap: 15px;
+        column-gap:15px;
+        row-gap: 10px;
     }
     
     .movie_card{
-        width: 27%;
+        width: 45%;
         height: 120px;
     }
     .movie_card_content{
