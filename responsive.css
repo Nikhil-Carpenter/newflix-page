@@ -1,4 +1,18 @@
-@media (min-width: 768px) and (max-width: 992px){
+
+/*working only in ipad portrait device*/
+@media only screen and (width: 768px) and (height: 1024px) and (orientation:portrait) {
+        .card_content{
+            top:27%;
+        }
+  }
+@media only screen and (width: 820px) and (height: 1180px) and (orientation:portrait) {
+        .card_content{
+            top:27%;
+        }
+  }
+
+
+@media (min-width: 768px) and (max-width: 1024px){
     .menu_container {
        padding:0 10px;
     }
@@ -59,7 +73,7 @@
         background-color: var(--black-color);
         position: fixed;
         color: rgba(255, 255, 255, 0.698);
-        display: flex;
+        display: none;
         bottom: 0;
         flex-direction: row;
         align-items: center;
@@ -82,35 +96,50 @@
     }
     
     .movie_card{
-        width: 28%;
-        height: 270px;
+        width: 22%;
+        height: auto;
+        background-color:rgba(0,0,0,0.9); 
+        color: #fff;
+        cursor: pointer;
+        border-radius:10px;
+        overflow: hidden;
     }
-    .movie_card_content{
-        padding-top: 170px;
-        padding-left: 0px;
+    .movie_card_img{
+        border-radius:10px;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        /* background-color:blue; */
     }
-
+    .movie_card_img img{
+        max-width: 100%;
+        height: auto;
+        transition: transform .2s ease-out;
+    }
+    .movie_card:hover .movie_card_img img{
+        transform: scale(1.05);
+    }
     .movie_details{
-        padding: 8px;
-        transform: scale(0);
-        transform-origin: 100% 50%;    
+        position: relative;
+        padding: 10px;
     }
     .movie_title{
-        margin-bottom: 2px;
+        margin-bottom: 5px;
         letter-spacing: 1px;
-        font-size:1.2rem;
+        line-height:1.2;
     }
-    .movie_rating{
-        display: block;
-        margin-bottom: 2px;
-        font-size:.9rem; 
+    .genre{
+        margin-right: 8px;
+        color: var(--off-white);
+        
     }
-    .movie_date{
-        font-size:.8rem;
+    .year{
         color: lightgray;
     }
-
 }
+
+
+
 /* ************************************************ */
 @media (min-width: 641px) and (max-width: 767px){
 
@@ -125,6 +154,10 @@
     }
     .logo{
         font-size:2.5rem;
+    }
+
+    .banner{
+        display: none;
     }
 
 /************* Searchbar */
@@ -161,7 +194,7 @@
     background-color: var(--black-color);
     position: fixed;
     color: rgba(255, 255, 255, 0.698);
-    display: flex;
+    display: none;
     bottom: 0;
     flex-direction: row;
     align-items: center;
@@ -174,8 +207,9 @@
 
 /* ************************ */
     .main_content_container{
-        width: 100%;
+      
         padding-left: 50px;
+        padding-right: 50px;
     }
     .movies_container{
         padding: 10px;
@@ -183,42 +217,10 @@
     }
     
     .movie_card{
-        width: 28%;
-        height: 220px;
+        width: 30%;
     }
-    .movie_card_content{
-        padding-top: 150px;
-        padding-left: 0px;
-    }
-
-    .movie_details{
-        padding: 5px;
-        transform: scale(0);
-        transform-origin: 100% 50%;    
-    }
-    .movie_title{
-        margin-bottom: 2px;
-        letter-spacing: 0px;
-        font-size:1.2rem;
-    }
-    .movie_rating{
-        display: block;
-        margin-bottom: 2px;
-        font-size:.9rem; 
-    }
-    .movie_date{
-        font-size:.8rem;
-        color: lightgray;
-    }
-    .movie_details a {
-        width: 25px;
-        height: 25px;
-       
-    }
-
+   
 }
-
-
 
 
 /* ************************************************ */
@@ -234,6 +236,7 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    
 
 /************* Searchbar */
     .searchBar{
@@ -269,7 +272,7 @@
         background-color: var(--black-color);
         position: fixed;
         color: rgba(255, 255, 255, 0.698);
-        display: flex;
+        display: none;
         bottom: 0;
         flex-direction: row;
         align-items: center;
@@ -284,51 +287,23 @@
 
 /* ************************ */
     .main_content_container{
-        width: 100%;
-        padding-left: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .movies_container{
         padding: 10px;
         gap: 15px;
     }
     
-    .movie_card{
-        width: 30%;
-        height: 180px;
-    }
-    .movie_card_content{
-        padding-top: 120px;
-        padding-left: 0px;
+     .banner{
+        display: none;
     }
 
-    .movie_details{
-        padding: 5px;
-        transform: scale(0);
-        transform-origin: 100% 50%;    
-    }
-    .movie_title{
-        margin-bottom: 2px;
-        letter-spacing: 0px;
-        font-size:1rem;
-    }
-    .movie_rating{
-        display: block;
-        margin-bottom: 2px;
-        font-size:.8rem; 
-    }
-    .movie_date{
-        font-size:.7rem;
-        color: lightgray;
-    }
-    .movie_details a {
-        width: 25px;
-        height: 25px;
-       
+    .movie_card{
+        width: 30%;
     }
 
 }
-
-
 
 
 
@@ -342,7 +317,10 @@
 
     .navbar_container{
         padding-left: 10px;
-        padding-right: 50px;
+        /* padding-right: 50px; */
+    }
+    .banner{
+        display: none;
     }
 
 /************* Searchbar */
@@ -402,47 +380,11 @@
 
 /* ************************ */
     .main_content_container{
-        width: 100%;
         padding-left: 10px;
+        padding-right: 10px;
     }
-    .movies_container{
-        padding: 10px;
-        column-gap:15px;
-        row-gap: 10px;
-    }
-    
     .movie_card{
         width: 45%;
-        height: 200px;
-    }
-    .movie_card_content{
-        padding-top: 70px;
-        padding-left: 0px;
-    }
-
-    .movie_details{
-        padding: 5px;
-        transform: scale(0);
-        transform-origin: 100% 50%;    
-    }
-    .movie_title{
-        margin-bottom: 2px;
-        letter-spacing: 0px;
-        font-size:1rem;
-    }
-    .movie_rating{
-        display: block;
-        margin-bottom: 2px;
-        font-size:.8rem; 
-    }
-    .movie_date{
-        font-size:.6rem;
-        color: lightgray;
-    }
-    .movie_details a {
-        width: 20px;
-        height: 20px;
-       
     }
 
 }
