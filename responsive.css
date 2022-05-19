@@ -25,10 +25,6 @@
     .navbar{
         height: 50px;
     }
-    .navbar_container{
-        padding-left: 65px;
-        padding-right: 65px;
-    }
     .user_img_container{
         width: 28px;
         height: 28px;
@@ -41,9 +37,7 @@
     }
     .menu_container{
         flex: 4;
-        justify-content: center;
-        /* flex-shrink: 5; */
-        /* background-color:blue; */
+        justify-content: flex-end;
     }
     .searchBar{
         height:25px;
@@ -233,8 +227,7 @@
     }
 
     .navbar_container{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 0 20px;
     }
     
 
@@ -303,6 +296,10 @@
         width: 30%;
     }
 
+    .footer_links > li{
+        flex-basis: 50%;
+    }
+
 }
 
 
@@ -316,45 +313,43 @@
     }
 
     .navbar_container{
-        padding-left: 10px;
-        /* padding-right: 50px; */
+        padding: 0 10px;
     }
     .banner{
         display: none;
     }
 
 /************* Searchbar */
+    
+
     .searchBar{
         height:20px;
-        width:250px;
-        max-width:150px;
+        width:unset;
+        max-width:unset;
         padding: 0 10px;
         column-gap: 8px;
         border-radius:2px;
+        overflow: unset;
+        background-color:transparent;
     }
     .searchBar input{
-        height:30px;
-        width:90%;
-        font-size:1.1rem;
-        text-indent:2px;
+      display: none;
     }
-    .searchBar i{
+    .searchBar i {
         color: var(--white-color);
+        font-size: 1.5rem;
     }
 
 /************* Search bar end */
   
-    .user_img_container{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        overflow: hidden;
+    .user_img_container {
+        margin-right: 30px;
     }
 
 /* ************** sideBar */
 
 
-.sidebar {
+/* .sidebar {
     width: 100%;
     height: 65px;
     background-color: var(--black-color);
@@ -369,10 +364,10 @@
     z-index: 8;
     left: 0;
     padding: 10px 0;
-}
-.sidebar .menu_items:last-child{
+} */
+/* .sidebar .menu_items:last-child{
     display: none;
-}
+} */
 
 /* ******* sideBar end */
 
@@ -387,4 +382,13 @@
         width: 45%;
     }
 
+
+    /* footer */
+
+    .socials {
+        width: 50%;
+    }
+    .footer_links > li{
+        flex-basis: 50%;
+    }
 }
