@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sen:wght@400;700;800&display=swap');
-
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Sen', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif; */
 
 *{
     margin: 0;
@@ -19,6 +18,7 @@ body {
     --white-color:  #E0BB20;
     --off-white:#e1e1e1;
 }
+
 
 .navbar{
     width: 100%;
@@ -39,11 +39,11 @@ body {
 }
 .logo_container{
     /* background-color: yellow; */
-    /* flex: 1; */
     margin-right:10px;
 }
 .logo{
-    font-family: 'Sen', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
 }
 .menu_container{
     /* flex: 4; */
@@ -106,10 +106,9 @@ body {
 }
 
 /* ******************************************* */
-.sidebar{
+/* .sidebar{
     width: 80px;
     height: 100%;
-    /* border:1px solid yellow; */
     background-color: var(--black-color);
     position:fixed;
     color: rgba(255, 255, 255, 0.698);
@@ -121,7 +120,8 @@ body {
     overflow: hidden;
     z-index: 8;
     display: none;
-}
+} */
+
 .menu_items{
     display: flex;
     flex-direction: column;
@@ -187,9 +187,11 @@ body {
 }
 .movie_title{
     margin-bottom: 5px;
-    letter-spacing: 1px;
     line-height:1.2;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
 }
+
 .genre{
     margin-right: 8px;
     color: var(--off-white);
@@ -253,6 +255,7 @@ body {
     transform: scale(1.1);
 }
 
+
 .card_content{
     position:absolute;
     z-index: 5;
@@ -261,6 +264,8 @@ body {
     pointer-events: none;
     right: 80px;
     top: 50%;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
 }
 .card_info{
     display:flex;
@@ -426,6 +431,8 @@ footer{
 .section_head{
     padding:20px 0;
     color: var(--white-color);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
 }
 
 .card_row{

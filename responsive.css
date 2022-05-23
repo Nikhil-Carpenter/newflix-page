@@ -325,16 +325,16 @@
     .searchBar{
         height:20px;
         width:unset;
-        max-width:unset;
-        padding: 0 10px;
+        max-width:100px;
+        padding: 20px 10px;
         column-gap: 8px;
         border-radius:2px;
         overflow: unset;
-        background-color:transparent;
+        background-color:#151515;
     }
-    .searchBar input{
+    /* .searchBar input{
       display: none;
-    }
+    } */
     .searchBar i {
         color: var(--white-color);
         font-size: 1.5rem;
